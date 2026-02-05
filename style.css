@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(212, 212, 212) !important;
+}
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-login {
+    background: var(--secondary-color);
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+/* Forms & Cards */
+.container {
+    padding: 40px 10%;
+}
+
+.auth-form, .data-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover { background: var(--secondary-color); }
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+/* الكود الإضافي للشعار */
+.logo-header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.logo-header img {
+    max-width: 220px; /* حجم الشعار */
+    height: auto;
+}
+
+/* تعديل بسيط لجعل القائمة تحت الشعار مباشرة */
+.navbar {
+    margin-top: 0;
+    justify-content: center; /* لتوسيط الروابط */
+}
